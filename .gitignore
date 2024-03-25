@@ -2,3 +2,4 @@
 *.lock
 Gemfile
 /.jekyll-cache/
+/.vscode
