@@ -8,11 +8,11 @@ layout: default
         <!-- <h3>Programming Projects</h3>
         
         <hr> -->
-        <h3>Publications/Research Projects</h3>
-        <ul>
+        <h3>Peer Reviewed Papers</h3>
+        <ul class="paperList">
 
             <li><a
-                    href="https://www.sciencedirect.com/science/article/abs/pii/S2213133723000264">Removing
+                    href="https://doi.org/10.1016/j.ascom.2023.100711">Removing
                     aliases in time-series photometry</a> (2/5/2023; First
                 Author) &#8212; <a
                     href="https://doi.org/10.48550/arXiv.2304.13843">arxiv</a>
@@ -42,4 +42,13 @@ layout: default
 
     </body>
 
+    <script>
+        for(let lst of document.getElementsByClassName("paperList")){
+            links = lst.getElementsByTagName("a")
+            for(let linkTag of links){
+                linkTag.classList.add("paperLink")
+                linkTag.setAttribute("target", "_blank")
+            }
+        } 
+    </script>
 </html>
